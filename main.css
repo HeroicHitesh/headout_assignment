@@ -31,7 +31,6 @@ html, body {
     border-radius: 50%;
 }
 .sidebar {
-    height: 100%;
     z-index: 1;
     background-color: #111;
     padding: 10px;
