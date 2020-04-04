@@ -7,6 +7,7 @@ html, body {
     grid-template-columns: repeat(14, 1fr);
     grid-template-rows: 5vh 90vh 5vh;
 }
+/* header section */
 .header {
     background-color: #e74c3c;
     padding: 10px;
@@ -15,27 +16,62 @@ html, body {
     flex-direction: row;
     justify-content: space-between;
 }
+/* youtube logo inside header */
 .app-logo img {
     background-color: aliceblue;
     width: 30px;
     height: auto;
 }
-.home {
-    
-}
+/* search bar inside header */
 .search {
-
+    width: 60%;
+    display: flex;
 }
-.logout img {
-    background-color: aliceblue;
-    border-radius: 50%;
+.search input[type=text] {
+    width: 100%;
+    border: none;
+    font-size: 17px;
 }
+/* deopdown menu inside header */
+.dropbtn {
+    background-color: #111;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+/* sidebar section */
 .sidebar {
     z-index: 1;
     background-color: #111;
     padding: 10px;
     padding-top: 16px;
-    grid-column: 1 / 5;
+    grid-column: 1 / 4;
 }
 .sidebar a {
     padding: 6px 8px 6px 16px;
@@ -47,17 +83,30 @@ html, body {
 .sidebar a:hover {
     color: #f1f1f1;
 }
-.main {
-    background-color: #16a085;
-    grid-column: 5 / -1;
-}
 @media screen and (max-height: 450px) {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
 }
+/* main section */
+.main {
+    margin: 50px;
+    grid-column: 4 / -1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+}
+.main div {
+    padding: 1em;
+    border: 1px solid black;
+}
+/* footer section */
 .footer {
+    background-color: #e74c3c;
     padding: 10px;
     grid-column: 1 / -1;
     display: flex;
     justify-content: flex-end;
+}
+.footer p {
+    color: #111;
 }
