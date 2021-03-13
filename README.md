@@ -1,4 +1,4 @@
-# Internship assignment for [Headout Inc.](headout.com)
+# Internship assignment for [Headout Inc.](https://www.headout.com)
 
 Duration for submission is 48 hours.
 
